@@ -27,6 +27,7 @@ function App() {
   const updateQuery = (e) =>{
     e.preventDefault();
     setQuery(search);
+    setSearch('');
   }
   return (
     < >
@@ -37,14 +38,21 @@ function App() {
       <button type='submit'>Search</button>
     </form>
     
+    <div className="grid-container">
+    
     { recipe.map( (recipe) =>(
+      <div className="flexone">
       <Recipe
+       key={recipe.recipe.label}
        title={recipe.recipe.label}
        calories={recipe.recipe.calories}
        image={recipe.recipe.image}
        ingredients={recipe.recipe.ingredients}
        />
+       </div>
     ) )}
+    
+    </div>
     </div>
     
     </>

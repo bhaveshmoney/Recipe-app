@@ -4,9 +4,9 @@
 
 
 input {
-  background-color:  #e7e7e7;
+  background-color:cornsilk;
   border: none;
-  color: white;
+  color: black;
   padding: 8px 32px;
   text-decoration: none;
   margin: 4px 2px;
@@ -24,16 +24,18 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-/* .grid-container{
+.grid-container{
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  background-color:cornsilk;
+   padding: 10px; 
+   grid-template-columns: auto auto auto ;
+   grid-gap: 10px;
+   
 }
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 30px;
+/* .grid-container flexone {
+ flex: 1;
+ padding: 20px;
+ width: 30%;
 } */
+
+

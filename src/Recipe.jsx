@@ -10,10 +10,14 @@ const Recipe = ({title,calories,image,ingredients}) => {
          <p>{calories}</p>
          <img src={image} alt="" />
          <ol>
+         <button type="button" className="collapsible" >Ingredient</button>
+         <div className="content">
          {ingredients.map((ingredient) => (
-                 <li>{ingredient.text}</li>
-             ))}
             
+               <li>{ingredient.text}</li>  
+                 
+             ))}
+             </div>
          </ol>
          </div>
              
